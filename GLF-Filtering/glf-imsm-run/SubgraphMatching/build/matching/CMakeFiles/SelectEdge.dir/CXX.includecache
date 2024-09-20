@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/scratch2/users/40334799/GLF-Filtering/glf-imsm-run/SubgraphMatching/matching/SelectEdge.cpp
+cassert
+-
+algorithm
+-
+vector
+-
+fstream
+-
+iostream
+-
+sstream
+-
+chrono
+-
+tuple
+-
+random
+-
+

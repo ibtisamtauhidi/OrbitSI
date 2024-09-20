@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../configuration/config.h
+
+../configuration/types.h
+cstdint
+-
+stdlib.h
+-
+
+../graph/graph.h
+unordered_map
+-
+iostream
+-
+configuration/types.h
+../graph/configuration/types.h
+configuration/config.h
+../graph/configuration/config.h
+
+/mnt/scratch2/users/40334799/GLF-Filtering/glf-imsm-run/SubgraphMatching/matching/GraphConverter.cpp
+graph/graph.h
+/mnt/scratch2/users/40334799/GLF-Filtering/glf-imsm-run/SubgraphMatching/matching/graph/graph.h
+
