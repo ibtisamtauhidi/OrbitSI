@@ -1,2 +1,0 @@
-[console_scripts]
-orbitsi = orbitsi.main:cli_entrypoint
