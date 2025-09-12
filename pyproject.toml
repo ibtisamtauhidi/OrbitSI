@@ -1,0 +1,47 @@
+[build-system]
+requires = [
+    "setuptools>=61",
+    "wheel",
+    "pybind11"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orbitsi"
+version = "0.1.2"
+description = "OrbitSI: An Orbit-based Algorithm for the Subgraph Isomorphism Search Problem"
+authors = [
+    { name = "Syed Ibtisam Tauhidi", email = "stauhidi01@qub.ac.uk" }
+]
+readme = "README.md"
+license = { text = "Apache-2.0" }
+keywords = ["graphlets", "orbits", "subgraph isomorphism", "EVOKE", "ORCA"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "networkx",
+    "numpy",
+    "pybind11"
+]
+
+[project.urls]
+Homepage = "https://hpdc-gitlab.eeecs.qub.ac.uk/sitauhidi/orbitsi-nx"
+Documentation = "https://hpdc-gitlab.eeecs.qub.ac.uk/sitauhidi/orbitsi-nx/-/wikis/home"
+Source = "https://hpdc-gitlab.eeecs.qub.ac.uk/sitauhidi/orbitsi-nx"
+
+[project.scripts]
+orbitsi = "orbitsi.main:cli_entrypoint"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["orbitsi", "orbitsi.*"]
+
+[tool.cibuildwheel]
+skip = "*-musllinux*"
